@@ -1,0 +1,14 @@
+/*
+    RESET
+*/
+* { margin: 0; padding: 0; }
+.clear { clear: both; }
+img, a img { border: none; }
+input { outline: none; }
+
+/*
+    STRUCTURE
+*/
+body { font: 14px/1.1 Helvetica, Sans-Serif; background-color: #e7e7e7; }
+
+
