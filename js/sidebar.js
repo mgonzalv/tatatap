@@ -29,7 +29,12 @@
             classie.remove( body, activeNav );
             activeNav = "";
             document.body.removeChild(mask);
+            window.location.reload();
         } );
     });
 
 })( window );
+
+
+
+

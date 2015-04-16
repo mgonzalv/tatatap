@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tap Card</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
   </head>
 
   <body>
@@ -39,7 +40,7 @@
     </nav>
 
     <!-- Content-->
-    <div id="wrapper">
+    <div   data-role="page" id="pageone">
 
       <!-- The app topbar -->
       <div class="topbar">
@@ -48,7 +49,7 @@
       </div>
 
       <!-- Tapcards-->
-      <div>
+      <div data-role="main" class="ui-content">
 
         <ul class="tapcard">
           <li class="card">
@@ -92,16 +93,20 @@
             </div>
         </ul>
 
-
-
-      </div>
-
     </div>
-   <script src="js/hammer.js"></script>
+
    <script src="js/classie.js"></script>
    <script src="js/sidebar.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <script>
+     $(document).on("pagecreate","#pageone",function(){
+       $("li").on("swipe",function(){
+         $(this).hide();
+       });                       
+     });
+</script>
 
   </body>
 </html>
 
-          </li>
