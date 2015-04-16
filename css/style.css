@@ -2,7 +2,6 @@
     RESET
 */
 * { margin: 0; padding: 0; }
-.clear { clear: both; }
 img, a img { border: none; }
 input { outline: none; }
 body{ overflow-x: hidden}
@@ -21,6 +20,7 @@ body { font: 14px/1.1 Helvetica, Sans-Serif; background-color: #e7e7e7; }
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    
 }
 
 .mask {
@@ -103,12 +103,105 @@ nav.push-menu-left .close-menu:hover{
 
 
 nav.push-menu-left {
-    left: -300px
+    left: -300px;
 }
 body.pml-open nav.push-menu-left {
-    left: 0
+    left: 0;
 }
 body.pml-open #wrapper {
-    left: 300px
+    left: 300px;
 }
+
+
+
+
+/*
+    topbar
+*/
+div.topbar{
+    height: 100px; width: 100%;
+    text-align: center;
+}
+
+
+.nav-toggler {
+	display:inline-block;
+	text-decoration:none;
+        font-size: 40px;
+        float: left;
+        margin: 0 10px;
+}
+.nav-toggler:hover {
+	color:#fff;
+}
+
+/*
+    tapCard
+*/
+
+div.data{
+   background: #fff;
+   padding: 25px;
+
+}
+
+div.data p{
+    margin: 10px;
+}
+
+ul.card .tittle {
+    opacity: .8;
+    position:absolute;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -40px;
+    text-align: center;
+    
+}
+
+ul.card {
+  list-style-type: none;
+}
+
+ul.card li{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 0;
+    -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+
+}
+
+
+ul.card li:nth-child(1) {
+    opacity: 0.25;
+}
+
+
+ul.card li:nth-child(2) {
+    -moz-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    opacity: 0.50;
+
+}
+
+ul.card li:nth-child(3) {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    opacity: 0.75;
+}
+
+ul.card li:nth-child(4) {
+    -moz-transform: rotate(17deg);
+    -webkit-transform: rotate(17deg);
+    transform: rotate(17deg);
+    opacity: 1.0;
+
+}
+
 
