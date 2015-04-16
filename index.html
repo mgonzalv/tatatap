@@ -2,51 +2,67 @@
 <html class="html" lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tap Card</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
 
   <body>
-    <div class="sidebar">
+    <!-- Sidebar -->
+    <nav class="menu push-menu-left">
       <h3>tapCARD</h3>
       <ul>
         <li>tapCARD
           <ul>
-            <li><img src="img/thumb1.jpg"></li>
-            <li>Ana Chan</li>
+            <li><img src="img/thumb1.jpg">Ana Chan</li>
           <ul>
         </li>
         <li>tapCARD
           <ul>
-            <li><img src="img/thumb1.jpg"></li>
-            <li><img src="img/thumb1.jpg"></li>
-  	    <li><img src="img/thumb1.jpg"></li>
-            <li><img src="img/thumb1.jpg"></li>
+            <li class="close-menu">
+            <img src="img/thumb1.jpg"> 
+            <img src="img/thumb1.jpg">
+  	    <img src="img/thumb1.jpg">
+            <img src="img/thumb1.jpg">
+            </li>
           <ul>
         </li>
-        <li>tapCARD
+        <li class="clear">tapCARD
           <ul>
-            <li>Anna Chan</li>
-            <li>Becky Chan</li>
-  	    <li>Chris Chan</li>
-            <li>Dick Chan</li>
+            <li> <img src="img/thumb1.jpg">Anna Chan</li>
+            <li> <img src="img/thumb1.jpg">Becky Chan</li>
+  	    <li> <img src="img/thumb1.jpg">Chris Chan</li>
+            <li> <img src="img/thumb1.jpg">Dick Chan</li>
           </ul>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="tapcard">
-      <h1>tapCARD</h1>
-      <div class="card">
-        <img src="img/1.jpg">
-        <p>Welcome to my tapCARD</p>
-        <ul>
-            <li>Dick Chan</li>
-            <li>123456789</li>
-  	    <li>987654321</li>
-         </ul>
-      <div>
+    <!-- Content-->
+    <div id="wrapper">
+
+      <!-- The app topbar -->
+      <div class="topbar">
+         <button class="nav-toggler toggle-push-left"><</button>
+          tapCARD
+      </div>
+
+      <!-- Tapcards-->
+      <div class="tapcard">
+        <div class="card">
+          <img src="img/1.jpg">
+          <p>Welcome to my tapCARD</p>
+          <ul>
+              <li>Dick Chan</li>
+              <li>123456789</li>
+  	      <li>987654321</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
+   <script src="js/classie.js"></script>
+   <script src="js/sidebar.js"></script>
   </body>
 </html>
 
