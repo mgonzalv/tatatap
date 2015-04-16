@@ -139,7 +139,7 @@ div.topbar{
     tapCard
 */
 
-div.tapcard{
+ul.tapcard{
    margin: 0 35%;
 
 }
@@ -154,7 +154,7 @@ div.data p{
     margin: 10px;
 }
 
-ul.card .tittle {
+ul.tapcard .tittle {
     opacity: .8;
     position:absolute;
     color: #fff;
@@ -165,11 +165,11 @@ ul.card .tittle {
     
 }
 
-ul.card {
+ul.tapcard {
   list-style-type: none;
 }
 
-ul.card li{
+ul.tapcard li{
     position: absolute;
     z-index: 0;
     -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
@@ -181,41 +181,47 @@ ul.card li{
 
 
 @-webkit-keyframes animate {
-    0% { margin: 45% 45%; }
-    100% {  margin: -10% 0%; }
+    from { margin: 0% 2%;  opacity: 0; }
+    to {  margin: -2% 0%;   opacity:1;}
 }
 
 
-ul.card li:nth-child(1) {
+ul.tapcard li:nth-child(1) {
     opacity: 0.25;
-    -webkit-animation: animate .2s ease-in;
+    -webkit-animation: animate .5s ease-out;
 }
 
 
-ul.card li:nth-child(2) {
+ul.tapcard li:nth-child(2) {
     -moz-transform: rotate(-7deg);
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
     opacity: 0.50;
-    -webkit-animation: animate .4s ease-in;
-
+    -webkit-animation: animate 1.5s ease-in;
+    
 }
 
-ul.card li:nth-child(3) {
+ul.tapcard li:nth-child(3) {
     -moz-transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
     opacity: 0.75;
-    -webkit-animation: animate .6s ease-in;
+    -webkit-animation: animate 2.5s ease-in;
 }
 
-ul.card li:nth-child(4) {
+ul.tapcard li:nth-child(4) {
     -moz-transform: rotate(17deg);
     -webkit-transform: rotate(17deg);
     transform: rotate(17deg);
     opacity: 1.0;
-    -webkit-animation: animate .8s ease-in;
+    -webkit-animation: animate 3.5s ease-in;
+    
 
+}
+
+
+.card{
+    cursor:pointer;
 }
 
 
