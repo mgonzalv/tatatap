@@ -139,6 +139,11 @@ div.topbar{
     tapCard
 */
 
+div.tapcard{
+   margin: 0 35%;
+
+}
+
 div.data{
    background: #fff;
    padding: 25px;
@@ -166,18 +171,24 @@ ul.card {
 
 ul.card li{
     position: absolute;
-    top: 50%;
-    left: 30%;
     z-index: 0;
     -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
     box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
 
+
+}
+
+
+@-webkit-keyframes animate {
+    0% { margin: 45% 45%; }
+    100% {  margin: -10% 0%; }
 }
 
 
 ul.card li:nth-child(1) {
     opacity: 0.25;
+    -webkit-animation: animate .2s ease-in;
 }
 
 
@@ -186,6 +197,7 @@ ul.card li:nth-child(2) {
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
     opacity: 0.50;
+    -webkit-animation: animate .4s ease-in;
 
 }
 
@@ -194,6 +206,7 @@ ul.card li:nth-child(3) {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
     opacity: 0.75;
+    -webkit-animation: animate .6s ease-in;
 }
 
 ul.card li:nth-child(4) {
@@ -201,6 +214,7 @@ ul.card li:nth-child(4) {
     -webkit-transform: rotate(17deg);
     transform: rotate(17deg);
     opacity: 1.0;
+    -webkit-animation: animate .8s ease-in;
 
 }
 
